@@ -73,6 +73,145 @@ public class Patrones {
 	}
 	
 	
+	public static boolean[][] reptor() {
+		boolean patron[][] = new boolean[maxFil][maxCol];
+		
+		for (int f=0; f<maxFil; f++) {
+			for (int c=0; c<maxCol; c++) {
+				patron[f][c] = false;
+			}
+		}
+		
+		patron[23][maxCol-29] = true;
+		patron[24][maxCol-29] = true;
+		patron[25][maxCol-29] = true;
+		patron[23][maxCol-28] = true;
+		patron[24][maxCol-28] = true;
+		patron[25][maxCol-28] = true;
+		
+		patron[30][maxCol-29] = true;
+		patron[31][maxCol-29] = true;
+		patron[32][maxCol-29] = true;
+		patron[30][maxCol-28] = true;
+		patron[31][maxCol-28] = true;
+		patron[32][maxCol-28] = true;
+		
+		patron[22][maxCol-24] = true;
+		patron[23][maxCol-24] = true;
+		patron[24][maxCol-24] = true;
+		patron[25][maxCol-24] = true;
+		patron[26][maxCol-24] = true;
+		
+		patron[29][maxCol-24] = true;
+		patron[30][maxCol-24] = true;
+		patron[31][maxCol-24] = true;
+		patron[32][maxCol-24] = true;
+		patron[33][maxCol-24] = true;
+		
+		patron[26][maxCol-23] = true;
+		patron[29][maxCol-23] = true;
+		patron[27][maxCol-22] = true;
+		patron[28][maxCol-22] = true;
+		
+		patron[24][maxCol-22] = true;
+		patron[24][maxCol-21] = true;
+		patron[23][maxCol-21] = true;
+		patron[22][maxCol-20] = true;
+		patron[21][maxCol-19] = true;
+		
+		patron[31][maxCol-22] = true;
+		patron[31][maxCol-21] = true;
+		patron[32][maxCol-21] = true;
+		patron[33][maxCol-20] = true;
+		patron[34][maxCol-19] = true;
+		
+		patron[19][maxCol-17] = true;
+		patron[20][maxCol-17] = true;
+		patron[21][maxCol-17] = true;
+		patron[20][maxCol-16] = true;
+		patron[21][maxCol-16] = true;
+		patron[22][maxCol-16] = true;
+		
+		patron[34][maxCol-17] = true;
+		patron[35][maxCol-17] = true;
+		patron[36][maxCol-17] = true;
+		patron[33][maxCol-16] = true;
+		patron[34][maxCol-16] = true;
+		patron[35][maxCol-16] = true;
+		
+		patron[22][maxCol-15] = true;
+		patron[22][maxCol-14] = true;
+		patron[23][maxCol-14] = true;
+		patron[24][maxCol-14] = true;
+		
+		patron[33][maxCol-15] = true;
+		patron[33][maxCol-14] = true;
+		patron[32][maxCol-14] = true;
+		patron[31][maxCol-14] = true;
+		
+		patron[25][maxCol-13] = true;
+		patron[23][maxCol-12] = true;
+		patron[22][maxCol-11] = true;
+		patron[21][maxCol-10] = true;
+		
+		patron[30][maxCol-13] = true;
+		patron[32][maxCol-12] = true;
+		patron[33][maxCol-11] = true;
+		patron[34][maxCol-10] = true;
+		
+		patron[25][maxCol-11] = true;
+		patron[24][maxCol-10] = true;
+		
+		patron[30][maxCol-11] = true;
+		patron[31][maxCol-10] = true;
+		
+		patron[21][maxCol-8] = true;
+		patron[24][maxCol-8] = true;
+		
+		patron[34][maxCol-8] = true;
+		patron[31][maxCol-8] = true;
+		
+		patron[26][maxCol-8] = true;
+		patron[29][maxCol-8] = true;
+		patron[27][maxCol-9] = true;
+		patron[28][maxCol-9] = true;
+		patron[27][maxCol-7] = true;
+		patron[28][maxCol-7] = true;
+		
+		patron[24][maxCol-6] = true;
+		patron[23][maxCol-6] = true;
+		patron[23][maxCol-5] = true;
+		patron[23][maxCol-4] = true;
+		patron[22][maxCol-6] = true;
+		
+		patron[31][maxCol-6] = true;
+		patron[32][maxCol-6] = true;
+		patron[32][maxCol-5] = true;
+		patron[32][maxCol-4] = true;
+		patron[33][maxCol-6] = true;
+		
+		patron[21][maxCol-3] = true;
+		patron[21][maxCol-2] = true;
+		patron[25][maxCol-3] = true;
+		patron[25][maxCol-2] = true;
+		
+		patron[30][maxCol-3] = true;
+		patron[30][maxCol-2] = true;
+		patron[34][maxCol-3] = true;
+		patron[34][maxCol-2] = true;
+		
+		patron[20][maxCol-1] = true;
+		patron[23][maxCol-1] = true;
+		patron[26][maxCol-1] = true;
+		
+		patron[29][maxCol-1] = true;
+		patron[32][maxCol-1] = true;
+		patron[35][maxCol-1] = true;
+		
+		return patron;
+	}
+	
+	
 	public static boolean[][] rectangle() {
 		boolean patron[][] = new boolean[maxFil][maxCol];
 		
@@ -89,7 +228,6 @@ public class Patrones {
 		
 		return patron;
 	}
-
 	
 	
 	public static boolean[][] allBlack() {

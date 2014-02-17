@@ -27,6 +27,7 @@ public class Ventana implements ActionListener {
     private JMenuItem miMasVelocidad,
                       miMenosVelocidad,
                       miGosperGliderGun,
+                      miReptor,
                       miRectangle,
                       miAllBlack,
                       miRandom,
@@ -166,6 +167,12 @@ public class Ventana implements ActionListener {
                "Patron Gosper Glider Gun");
 	    miGosperGliderGun.addActionListener(this);
 	    mPatrones.add(miGosperGliderGun);
+	    
+	    miReptor = new JMenuItem("Reptor");
+	    miReptor.getAccessibleContext().setAccessibleDescription(
+	    		"Patron Reptor");
+	    miReptor.addActionListener(this);
+	    mPatrones.add(miReptor);
 	    
 	    miRectangle = new JMenuItem("Rectangle");
 	    miRectangle.getAccessibleContext().setAccessibleDescription(
@@ -315,6 +322,12 @@ public class Ventana implements ActionListener {
 			Patrones.setMaxFil(gol.getFil()+2);
 			Patrones.setMaxCol(gol.getCol()+2);
 			gol.setPatron(Patrones.gosperGliderGun());
+		}
+		
+		if (o == miReptor) {
+			Patrones.setMaxFil(gol.getFil()+2);
+			Patrones.setMaxCol(gol.getCol()+2);
+			gol.setPatron(Patrones.reptor());
 		}
 		
 		if (o == miRectangle) {
